@@ -1,10 +1,10 @@
 /* Cores e fontes padrões */
 :root {
-  --cor-textos: #193752;
+  --cor-textos: #ffffff;
   --cor-titulo: rgb(255, 255, 255);
-  --font-textos: 'Archivo Narrow', sans-serif;
-  --font-titulo: 'Archivo Black', sans-serif;
-  --paletta-amarelo-base: #fff;
+  --font-textos: 'roboto condensed', sans-serif;
+  --font-titulo: 'roboto condensed', sans-serif;
+  --paletta-amarelo-base: #80372D;
   --paletta-amarelo-hover: #193752;
   --paletta-azul-base: #193752;
   --paletta-azul-hover: #030303;
