@@ -14,6 +14,21 @@ $(function () {
         }
     }
 
+    $('.start-button').click(function() {
+        $('.start-screen').addClass('d-none');
+        $('#top-quiz').removeClass('d-none');
+        alteraBackground()
+    });
+
+    function alteraBackground() {
+        if ($('.start-screen').hasClass('d-none')) {
+            $('body').css('background-image', 'url("../assets/img/bg-desk.png")');
+        } else {
+            $('body').css('background-image', 'url("../assets/img/bg-desk.png")');
+
+        }
+    }
+
     // Preciso corrigir este bloco para aceitar mais de uma resposta certa.
     $("body").on("click", ".respostas button.bto", function () { // Clique para responder as perguntas do Quiz Clássico
         let userOption = $(this).index();
@@ -225,18 +240,20 @@ let templateQuiz = function (i) {
 
     let respostas = $("<div></div>");
     respostas.addClass("respostas");
+    
     let nro_respostas = perguntas[i].respostas.length;
 
     for (a = 0; a < nro_respostas; a++) {
         let resposta = perguntas[i].respostas[a];
         let imagemHtml = '';
+ 
 
         if (resposta.imagem) {
             let img = resposta.imagem;
             imagemHtml = '<img src="' + img.src + '" alt="' + img.alt + '" title="' + img.title + '" class="img-fluid resposta-imagem" />';
         }
 
-        respostas.append('<button data-resp="' + a + '" type="button" data-label="' + resposta.ordem + '" class="bto">' + imagemHtml + resposta.texto + '</button>');
+        respostas.append('<button data-resp="' + a + '" type="button" data-label="' + resposta.ordem + '" class="bto img-selecionada">' + imagemHtml + resposta.texto + '</button>');
     }
     topSlidePai.append(respostas);
 
@@ -607,6 +624,17 @@ var mostrarNavPadrao = (type) => {
     }
     $("#navegacao").fadeIn("fast");
 }
+
+function checkWidth() {
+    if ($(window).width() <= 889) {
+        $('.img-iniciar').attr('src', 'assets/img/mob_logo.png');
+    } else {
+        $('.img-iniciar').attr('src', 'assets/img/logo_1.png');
+    }
+}
+
+checkWidth();
+
 
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);

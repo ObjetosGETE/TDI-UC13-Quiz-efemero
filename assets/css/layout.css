@@ -1,4 +1,5 @@
 @import "custom.css";
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
 html,
 body {}
@@ -9,18 +10,18 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: #333;
-  font-size: 26px;
+  font-size: 22px;
 
 }
 
 .bto-padrao {
-	/* display: block; */
-	color: white;
-	background-color: #2A8080;
-	border: 0px;
-	padding: 15px 35px;
-	display: inline-block;
-	border-radius: 15px;
+  /* display: block; */
+  color: white;
+  background-color: #2A8080;
+  border: 0px;
+  padding: 15px 35px;
+  display: inline-block;
+  border-radius: 15px;
   box-shadow: 4px 4px 0px #353535;
   font-size: 28px;
 }
@@ -29,12 +30,39 @@ body {
   background-color: #154949;
 }
 
+.start-button {
+  color: white;
+  background-color: #2A8080;
+  border: 0px;
+  padding: 15px 35px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 0px #353535;
+  font-size: 28px;
+}
+
+.start-button:hover {
+  background-color: #154949;
+}
+
+#reiniciar {
+  color: #2A8080;
+  background-color: white;
+  box-shadow: 4px 4px 0px #2A8080;
+}
+
+#reiniciar:hover {
+  color: white;
+  background-color: #2A8080;
+  box-shadow: 4px 4px 0px #353535;
+}
+
 p,
 button {
   font-family: var(--font-textos);
   font-size: 22px;
   color: var(--cor-textos);
 }
+
 
 h2 {
   font-family: var(--font-titulo);
@@ -54,12 +82,53 @@ h2 {
   position: relative;
 }
 
+.start-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.div-iniciar {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-iniciar {
+  max-width: 665px;
+  height: auto;
+}
+
+.h1-inicio {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  font-family: "Archivo", sans-serif;
+  font-size: 26px;
+  color: #353535;
+}
+
+.start-button {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 196px;
+  height: 69px;
+  border-radius: 10px;
+}
+
 .ico-feedback {
   display: block;
   width: 100%;
   height: auto;
   position: relative;
-  max-width: 66px;
+  max-width: 75%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -119,19 +188,19 @@ h2 {
   text-align: left;
 }
 
-.bto::before, .bto:hover.desativar::before {
-	content: attr(data-label);
-	width: 48px;
-	height: 48px;
-	text-align: center;
-	display: inline-block;
-	border: 1px solid #80372D;
-	background-color: #FFF;
-	margin-right: 10px;
-	box-shadow: 3px 3px 0px #80372D;
+.bto::before,
+.bto:hover.desativar::before {
+  content: attr(data-label);
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #80372D;
+  background-color: #FFF;
+  margin-right: 10px;
+  box-shadow: 3px 3px 0px #80372D;
   color: #353535;
-  font-size: 26px !important;
-  padding: 3px;
+  padding: 7px;
 }
 
 .bto:hover {
@@ -141,13 +210,13 @@ h2 {
 .bto:hover::before {
   background-color: #80372D;
   box-shadow: 3px 3px 0px #353535;
-  color: #353535;
+  color: white;
 }
 
 .bto.positivo::before,
 .bto-dragindrop-item.positivo,
 .bto.positivo:hover::before {
-  color:#ffffff;
+  color: #ffffff;
   background-color: #80372D;
   box-shadow: 3px 3px 0px #353535;
 }
@@ -158,16 +227,10 @@ h2 {
   background-color: var(--feedback-negativo);
 }
 
-/* .bto.positivo,
-.bto-dragindrop-item.positivo,
-.bto.positivo::before {
-  color: #353535;
-} */
-
-.bto.negativo,
+.bto .negativo,
 .bto-dragindrop-item.negativo,
 .bto.negativo::before {
-  color:#353535;
+  color: #353535;
 }
 
 .respostas {
@@ -176,6 +239,10 @@ h2 {
   margin-right: auto;
   margin-top: 40px;
   width: 100%;
+}
+
+.top-slide-final {
+  margin-top: 40px;
 }
 
 .top-slide-final .pergunta.pt-5.pb-5 {
@@ -199,7 +266,7 @@ h2 {
 }
 
 header.senac {
-  background-color: #50D7E2;
+  background-color: #e74a3b;
 }
 
 header.senac {
@@ -313,9 +380,14 @@ h1 {
 }
 
 .resposta-imagem {
-  width: 77%;
+  width: 253px;
   border-radius: 20px;
   box-shadow: 3px 3px 0px #80372D;
+}
+
+.resposta-imagem:hover {
+  transform: scale(0.9);
+  transition: transform 0.3s;
 }
 
 .img-relacionarcom {
@@ -534,5 +606,26 @@ button.bto-dragindrop-item.desativar {
   .help-btn {
     bottom: 10px;
     right: 10px;
+  }
+}
+
+@media (max-width: 760px) {
+  .img-iniciar {
+    max-width: 425px;
+    height: auto;
+  }
+
+  .start-button {
+    top: 82%;
+    width: 166px;
+    height: 47px;
+    padding: 1%;
+    font-size: 22px;
+  }
+
+  .h1-inicio {
+    top: 60%;
+    font-size: 22px;
+    
   }
 }
