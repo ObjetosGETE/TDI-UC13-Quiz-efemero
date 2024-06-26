@@ -5,7 +5,6 @@
   --font-textos: 'roboto condensed', sans-serif;
   --font-titulo: 'roboto condensed', sans-serif;
   --paletta-amarelo-base: #80372D;
-  --paletta-amarelo-hover: #193752;
   --paletta-azul-base: #193752;
   --paletta-azul-hover: #030303;
   --paletta-verde-claro: #8FC4B6;
@@ -15,8 +14,8 @@
   --feedback-negativo: #FF7C7C;
 }
 
-body {
-  background-image: url(../img/bg-desk.png);
+ body {
+  background-image: url(../img/BG_capa.png);
 }
 
 body.nav_ativa {
@@ -32,7 +31,8 @@ body.nav_ativa {
 }
 
 .header-tecnicos {
-  background-image: url(../img/bg-topo-logobg.png), url(../img/topo.jpg);
+  /* background-image: url(../img/bg-topo-logobg.png), url(../img/topo.jpg); */
+  background-image: url(../img/topo.jpg);
 }
 
 .dragindrop button img {
@@ -62,7 +62,12 @@ body.nav_ativa {
 @media only screen and (max-width: 991px) {
   body {
     background: url(../img/bg-mobile.png) top center / cover fixed no-repeat #333;
-    font-size: 26px;
+    font-size: 22px;
+  }
+
+  .ico-feedback {
+    max-width: 40% !important;
+
   }
 }
 
@@ -106,8 +111,4 @@ body.nav_ativa {
 
 .bto::before {
   border-radius: 10px;
-}
-
-.bto:hover::before {
-  color: white !important
 }
