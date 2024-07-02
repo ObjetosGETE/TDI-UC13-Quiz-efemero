@@ -47,6 +47,7 @@ var lista_feedbacks_genericos = {
 var perguntas = [{
 
         titulo: "Questão 1",
+        type: "quiz",
         pergunta: {
             texto: "Qual das alternativas a seguir melhor descreve o principal propósito das exposições temporárias e feiras?"
         },
@@ -87,6 +88,7 @@ var perguntas = [{
     {
 
         titulo: "Questão 2",
+        type: "dragindrop",
         pergunta: {
             texto: "Qual dos espaços a seguir não pode ser caracterizado como um stand/estande?"
         },
@@ -96,8 +98,9 @@ var perguntas = [{
                 texto: "&nbsp;",
                 imagem: {
                     src: "../assets/img/questao1-img1.jpg",
-                    title: "Fonte: <https://www.archdaily.com.br/br/892729/estandes-grupo-duratex-gtm-cenografia>. Acesso em: 24 maio 2024. ",
-                    alt: "estandes grupo duratex gtm cenografia"
+                    title: "estandes grupo duratex gtm cenografia",
+                    alt: "estandes grupo duratex gtm cenografia",
+                    fonte: "Fonte:https://www.archdaily.com.br/br/892729/estandes-grupo-duratex-gtm-cenografia. Acesso em: 24 maio 2024."
                 }
             },
             {
@@ -106,9 +109,11 @@ var perguntas = [{
                 texto: "&nbsp;",
                 imagem: {
                     src: "../assets/img/questao1-img2.jpg",
-                    title: "Fonte: <https://www.archdaily.com.br/br/892729/estandes-grupo-duratex-gtm-cenografia>. Acesso em: 24 maio 2024.",
-                    alt: "stand deca hydra gtm cenografia"
+                    title: "stand deca hydra gtm cenografia",
+                    alt: "stand deca hydra gtm cenografia",
+                    fonte: "Fonte:https://www.archdaily.com.br/br/892729/estandes-grupo-duratex-gtm-cenografia. Acesso em: 24 maio 2024."
                 }
+
             },
             {
                 ordem: "c",
@@ -116,8 +121,9 @@ var perguntas = [{
                 texto: "&nbsp;",
                 imagem: {
                     src: "../assets/img/questao1-img3.jpg",
-                    title: "Fonte: <https://www.archdaily.com.br/br/867511/stand-deca-hydra-gtm-cenografia>. Acesso em: 24 maio 2024. ",
-                    alt: "stand deca hydra gtm cenografia"
+                    title: "stand deca hydra gtm cenografia",
+                    alt: "stand deca hydra gtm cenografia",
+                    fonte: "Fonte:https://www.archdaily.com.br/br/867511/stand-deca-hydra-gtm-cenografia. Acesso em: 24 maio 2024."
                 }
             },
             {
@@ -126,12 +132,11 @@ var perguntas = [{
                 texto: "&nbsp;",
                 imagem: {
                     src: "../assets/img/questao1-img4.jpg",
-                    title: "Fonte: <https://www.archdaily.com.br/br/1004051/banheiro-publico-komaeyu-schemata-architects-plus-jo-nagasaka>. Acesso em: 24 maio 2024. ",
-                    alt: "banheiro publico komaeyu schemata nagasaka"
+                    title: "banheiro publico komaeyu schemata nagasaka",
+                    alt: "banheiro publico komaeyu schemata nagasaka",
+                    fonte: "Fonte:https://www.archdaily.com.br/br/1004051/banheiro-publico-komaeyu-schemata-architects-plus-jo-nagasaka. Acesso em: 24 maio 2024."
                 }
             },
-
-
 
         ],
         feedbacks: {
@@ -147,6 +152,7 @@ var perguntas = [{
     },
     {
         titulo: "Questão 3",
+        type: "quiz",
         pergunta: {
             texto: "Para qual dos ambientes a seguir seria difícil fazer um projeto para evento temporário?"
         },
@@ -185,8 +191,8 @@ var perguntas = [{
         }
     },
     {
-
         titulo: "Questão 4",
+        type: "dragindrop",
         pergunta: {
             texto: "Qual das imagens a seguir não tem características de uma instalação artística ou intervenção urbana?"
         },
@@ -196,8 +202,9 @@ var perguntas = [{
                 texto: "&nbsp;",
                 imagem: {
                     src: "../assets/img/questao4-img1.jpg",
-                    title: "https://www.archdaily.com/1016144/off-season-pavilion-kosmos-architektur-and-design>. Acesso em: 24 maio 2024.",
-                    alt: "fora de temporada pavilhão-kosmos architektur-and design"
+                    title: "fora de temporada pavilhão-kosmos architektur-and design",
+                    alt: "fora de temporada pavilhão-kosmos architektur-and design",
+                    fonte: "Fonte:https://www.archdaily.com/1016144/off-season-pavilion-kosmos-architektur-and-design. Acesso em: 24 maio 2024."
                 }
             },
             {
@@ -206,8 +213,9 @@ var perguntas = [{
                 texto: "&nbsp;",
                 imagem: {
                     src: "../assets/img/questao4-img2.jpg",
-                    title: "Fonte: <https://www.archdaily.com/1012160/hiyoshi-pavilion-jorge-almazan-plus-keio-university-studiolab>. Acesso em: 24 maio 2024. ",
-                    alt: "pavilhão hiyoshi jorge almazan mais universidade keio studiolab"
+                    title: "pavilhão hiyoshi jorge almazan mais universidade keio studiolab",
+                    alt: "pavilhão hiyoshi jorge almazan mais universidade keio studiolab",
+                    fonte: "Fonte:https://www.archdaily.com/1012160/hiyoshi-pavilion-jorge-almazan-plus-keio-university-studiolab. Acesso em: 24 maio 2024. "
                 }
             },
             {
@@ -216,8 +224,9 @@ var perguntas = [{
                 texto: "&nbsp;",
                 imagem: {
                     src: "../assets/img/questao4-img3.jpg",
-                    title: "Fonte: <https://www.archdaily.com/1016649/ava-house-irina-biletska>. Acesso em: 24 maio 2024. ",
-                    alt: "vista interna casa irina biletska"
+                    title: "vista interna casa irina biletska",
+                    alt: "vista interna casa irina biletska",
+                    fonte: "Fonte:https://www.archdaily.com/1016649/ava-house-irina-biletska. Acesso em: 24 maio 2024. "
                 }
             },
             {
@@ -227,8 +236,9 @@ var perguntas = [{
                 texto: "&nbsp;",
                 imagem: {
                     src: "../assets/img/questao4-img4.jpg",
-                    title: "Fonte: <https://www.archdaily.com/970085/shatra-workshop-pavilion-milos-jokic-plus-ana-sabanovic-plus-nikola-abramovic-plus-luka-vujovic>. Acesso em: 24 maio 2024. ",
-                    alt: "pavilhão de oficinas milos jokic e ana sabanovic"
+                    title: "pavilhão de oficinas milos jokic e ana sabanovic",
+                    alt: "pavilhão de oficinas milos jokic e ana sabanovic",
+                    fonte: "Fonte:https://www.archdaily.com/970085/shatra-workshop-pavilion-milos-jokic-plus-ana-sabanovic-plus-nikola-abramovic-plus-luka-vujovic. Acesso em: 24 maio 2024. "
                 }
             },
         ],
@@ -245,6 +255,7 @@ var perguntas = [{
     {
 
         titulo: "Questão 5",
+        type: "quiz",
         pergunta: {
             texto: "Qual é a principal característica que um mobiliário efêmero deve ter?"
         },
@@ -285,8 +296,8 @@ var perguntas = [{
         }
     },
     {
-
         titulo: "Questão 6",
+        type: "dragindrop",
         pergunta: {
             texto: "Qual dos projetos a seguir apresenta um projeto de cenografia?"
         },
@@ -296,8 +307,9 @@ var perguntas = [{
                 texto: "&nbsp;",
                 imagem: {
                     src: "../assets/img/questao6-img1.jpg",
-                    title: "Fonte: <https://www.archdaily.com.br/br/886617/hotel-michelberger-quarto-304-sigurd-larsen>. Acesso em: 24 maio 2024. ",
-                    alt: "hotel michelberger"
+                    title: "hotel michelberger",
+                    alt: "hotel michelberger",
+                    fonte: "Fonte:https://www.archdaily.com.br/br/886617/hotel-michelberger-quarto-304-sigurd-larsen. Acesso em: 24 maio 2024. "
                 }
             },
             {
@@ -306,8 +318,9 @@ var perguntas = [{
                 texto: "&nbsp;",
                 imagem: {
                     src: "../assets/img/questao6-img2.jpg",
-                    title: "Fonte: <https://www.archdaily.com.br/br/912379/as-fadas-espetaculo-de-danca-paulo-vieitas>. Acesso em: 24 maio 2024. ",
-                    alt: "as fadas espetáculo de dança paulo vieitas"
+                    title: "as fadas espetáculo de dança paulo vieitas",
+                    alt: "as fadas espetáculo de dança paulo vieitas",
+                    fonte: "Fonte:https://www.archdaily.com.br/br/912379/as-fadas-espetaculo-de-danca-paulo-vieitas. Acesso em: 24 maio 2024."
                 }
             },
             {
@@ -316,8 +329,9 @@ var perguntas = [{
                 texto: "&nbsp;",
                 imagem: {
                     src: "../assets/img/questao6-img3.jpg",
-                    title: "Fonte: <https://www.archdaily.com.br/br/1010576/museu-nacional-da-marinha-snohetta>. Acesso em: 24 maio 2024. ",
-                    alt: "museu nacional da marinha snohetta"
+                    title: "museu nacional da marinha snohetta",
+                    alt: "museu nacional da marinha snohetta",
+                    fonte: "Fonte:https://www.archdaily.com.br/br/886617/hotel-michelberger-quarto-304-sigurd-larsen. Acesso em: 24 maio 2024. "
                 }
             },
             {
@@ -326,8 +340,9 @@ var perguntas = [{
                 texto: "&nbsp;",
                 imagem: {
                     src: "../assets/img/questao6-img4.jpg",
-                    title: "Fonte: <https://www.archdaily.com.br/br/1007116/apartamento-galeria-lez-arquitetura>. Acesso em: 24 maio 2024. ",
-                    alt: "apartamento galeria lez arquitetura"
+                    title: "apartamento galeria lez arquitetura",
+                    alt: "apartamento galeria lez arquitetura",
+                    fonte: "Fonte:https://www.archdaily.com.br/br/1007116/apartamento-galeria-lez-arquitetura. Acesso em: 24 maio 2024. "
                 }
             },
 
@@ -343,8 +358,8 @@ var perguntas = [{
         }
     },
     {
-
         titulo: "Questão 7",
+        type: "quiz",
         pergunta: {
             texto: "Qual é a principal característica que um espaço emergencial deve ter?"
         },
@@ -385,8 +400,8 @@ var perguntas = [{
         }
     },
     {
-
         titulo: "Questão 8",
+        type: "dragindrop",
         pergunta: {
             texto: "Qual das lojas a seguir tem as características mais próximas a uma pop-up store?"
         },
@@ -396,8 +411,9 @@ var perguntas = [{
                 texto: "&nbsp;",
                 imagem: {
                     src: "../assets/img/questao7-img1.jpg",
-                    title: "Fonte: <https://www.archdaily.com.br/br/764259/bar-temporario-noturno-fala-atelier>. Acesso em: 24 maio 2024.  ",
-                    alt: "bar temporario noturno fala atelier"
+                    title: "bar temporario noturno fala atelie",
+                    alt: "bar temporario noturno fala atelier",
+                    fonte: "Fonte:https://www.archdaily.com.br/br/764259/bar-temporario-noturno-fala-atelier. Acesso em: 24 maio 2024."
                 }
             },
             {
@@ -406,8 +422,9 @@ var perguntas = [{
                 texto: "&nbsp;",
                 imagem: {
                     src: "../assets/img/questao7-img2.jpg",
-                    title: "Fonte: <https://www.archdaily.com.br/br/1008220/loja-calico-club-barde-plus-vanvoltt>. Acesso em: 24 maio 2024. ",
-                    alt: "loja calico club"
+                    title: "loja calico club",
+                    alt: "loja calico club",
+                    fonte: "Fonte:https://www.archdaily.com.br/br/1008220/loja-calico-club-barde-plus-vanvoltt. Acesso em: 24 maio 2024."
                 }
             },
             {
@@ -416,8 +433,9 @@ var perguntas = [{
                 texto: "&nbsp;",
                 imagem: {
                     src: "../assets/img/questao7-img3.jpg",
-                    title: "Fonte: <https://www.archdaily.com.br/br/991852/pageone-store-office-aio>. Acesso em: 24 maio 2024.",
-                    alt: "escritório da loja pageone aio"
+                    title: "escritório da loja pageone aio",
+                    alt: "escritório da loja pageone aio",
+                    fonte: "Fonte:https://www.archdaily.com.br/br/991852/pageone-store-office-aio. Acesso em: 24 maio 2024."
                 }
             },
             {
@@ -426,8 +444,9 @@ var perguntas = [{
                 texto: "&nbsp;",
                 imagem: {
                     src: "../assets/img/questao7-img4.jpg",
-                    title: "Fonte: <https://www.archdaily.com.br/br/990206/sorveteria-brando-solar>. Acesso em: 24 maio 2024. ",
-                    alt: "sorveteria brando solar"
+                    title: "sorveteria brando solar",
+                    alt: "sorveteria brando solar",
+                    fonte: "Fonte:https://www.archdaily.com.br/br/990206/sorveteria-brando-solar. Acesso em: 24 maio 2024."
                 }
             },
 
