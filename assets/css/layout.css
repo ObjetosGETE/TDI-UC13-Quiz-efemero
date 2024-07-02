@@ -1,5 +1,7 @@
 @import "custom.css";
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 
 html,
 body {}
@@ -11,7 +13,7 @@ body {
   background-repeat: no-repeat;
   background-color: #333;
   font-size: 22px;
-
+  font-family: "Roboto", sans-serif !important;
 }
 
 .bto-padrao {
@@ -58,9 +60,9 @@ body {
 
 p,
 button {
-  font-family: var(--font-textos);
   font-size: 22px;
   color: var(--cor-textos);
+  font-family: "Roboto", sans-serif !important;
 }
 
 
@@ -184,7 +186,7 @@ h2 {
   border: 0px none;
   color: #353535;
   margin-bottom: 10px;
-  width: 100%;
+  /* width: 100%; */
   text-align: left;
 }
 
@@ -380,7 +382,7 @@ h1 {
 }
 
 .resposta-imagem {
-  width: 253px;
+  width: 300px;
   border-radius: 20px;
   box-shadow: 3px 3px 0px #80372D;
 }
@@ -400,7 +402,6 @@ h1 {
   text-align: center;
   max-width: 80%;
   width: 100%;
-
 }
 
 div#top-slides {
@@ -408,7 +409,7 @@ div#top-slides {
 }
 
 button.bto-dragindrop-item .fa-solid {
-  color: #64998a;
+  color: #2A8080;
   margin-right: 10px;
   font-size: 16px;
   top: -3px;
@@ -417,16 +418,13 @@ button.bto-dragindrop-item .fa-solid {
 
 button.bto-dragindrop-item {
   text-align: left;
-  border: 0px none;
   background: none;
   display: inline;
-  width: auto;
-  padding: 5px 10px;
-  border-radius: 5px;
+  border-radius: 20px;
   background-color: white;
   margin: 10px;
-  border: 3px solid #64998a;
-  box-shadow: 0 3px 0 #64998a;
+  border: 3px solid #80372D;
+  box-shadow: 3px 3px 0px #80372D;
 }
 
 button.bto-dragindrop-item.selected {
@@ -448,6 +446,25 @@ button.bto-dragindrop-item::before {
 
 button.bto-dragindrop-item.desativar {
   opacity: 0.5;
+}
+
+.container-alvo .bto-dragindrop-item img {
+  border-radius: 20px;
+}
+
+.bto-dragindrop-item img.img-fluid {
+  border-radius: 20px;
+}
+
+.container-alvo .bto-dragindrop-item {
+  border: 3px solid #2A8080;
+  box-shadow: 3px 3px 0px #2A8080;
+  border-radius: 20px;
+}
+
+.bto-dragindrop-item.ondragging {
+  border: 3px solid #2A8080 !important;
+  box-shadow: 3px 3px 0px #2A8080 !important;
 }
 
 .container-alvo.preenchido {
@@ -472,6 +489,22 @@ button.bto-dragindrop-item.desativar {
 
 .respostas>.ondragging {}
 
+.alert-draggin {
+  color: #2a8080;
+  background-color: #2a808059;
+  border: 1px solid #2a8080;
+  border-radius: 10px;
+}
+
+.d-flex.align-items-center.estilo-div-drag {
+  border: 2px dashed #2a8080;
+  border-radius: 10px;
+  padding: 1%;
+}
+
+.p-alert {
+  color: #2A8080;
+}
 
 .legenda {
   font-size: 16px;
@@ -479,6 +512,7 @@ button.bto-dragindrop-item.desativar {
   overflow: hidden;
   max-width: 380px;
   margin: auto;
+  color: #154949;
 }
 
 @media screen and (max-width:1000px) {
@@ -493,6 +527,10 @@ button.bto-dragindrop-item.desativar {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
+  }
+
+  .resposta-imagem {
+    width: 254px;
   }
 }
 
@@ -534,15 +572,13 @@ button.bto-dragindrop-item.desativar {
 }
 
 .alert {
-  position: absolute;
-  display: flex;
   flex-direction: column;
-  bottom: -400px;
   left: 50%;
   transform: translateX(-50%);
-  width: 600px;
+  width: 894px;
   max-width: 100%;
   box-shadow: 2px 2px 6px #80372D;
+  margin-top: 34px;
 }
 
 .alert p {
@@ -626,6 +662,6 @@ button.bto-dragindrop-item.desativar {
   .h1-inicio {
     top: 60%;
     font-size: 22px;
-    
+
   }
 }
